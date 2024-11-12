@@ -169,4 +169,13 @@ Public Class Form1
         End Try
     End Sub
 
+ Private Sub DataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView.CellContentClick
+     txFaktur.Text = DataGridView.Rows(e.RowIndex).Cells(0).Value
+     txKodeBrg.Text = DataGridView.Rows(e.RowIndex).Cells(1).Value
+     txHargaJual.Text = DataGridView.Rows(e.RowIndex).Cells(2).Value
+     txJumlah.Text = DataGridView.Rows(e.RowIndex).Cells(3).Value
+     txSubTotal.Text = DataGridView.Rows(e.RowIndex).Cells(4).Value
+     txTotal.Text = DataGridView.Rows(e.RowIndex).Cells(5).Value
+ End Sub
+
 End Class
